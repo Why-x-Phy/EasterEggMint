@@ -164,8 +164,8 @@
   border-radius: 50%;
   font-size: 2rem;
   background-color: transparent;
-  border: 1px solid grey;
-  color: #fff;
+  border: 1px solid rgb(36, 34, 34);
+  color: #2c2929;
 }
 
 .quantityControlButton:disabled {

@@ -217,9 +217,10 @@ const Home: NextPage = () => {
           <p>Loading...</p>
         ) : (
           <>
-            {/*
+            
             <div className={styles.infoSide}>
               
+              {/*
                Title of your NFT Collection 
               <h1>{contractMetadata?.name}</h1>*/}
               
@@ -227,9 +228,9 @@ const Home: NextPage = () => {
               {/* Description of your NFT Collection 
               <p className={styles.description}>
                 {contractMetadata?.description}
-              </p>
+              </p>*/}
             
-            </div>*/}
+            </div>
 
             <div className={styles.imageSide}>
              
@@ -240,7 +241,7 @@ const Home: NextPage = () => {
                 alt={`${contractMetadata?.name} preview image`}
               /> */}
 
-              {/* Amount claimed so far 
+              {/* Amount claimed so far */} 
               <div className={styles.mintCompletionArea}>
                 <div className={styles.mintAreaLeft}>
                   <p>Total Minted</p>
@@ -256,7 +257,7 @@ const Home: NextPage = () => {
                     <p>Loading...</p>
                   )}
                 </div>
-              </div>*/}
+              </div>
 
               {claimConditions.data?.length === 0 ||
               claimConditions.data?.every(
@@ -285,7 +286,7 @@ const Home: NextPage = () => {
                       -
                     </button>
 
-                    {/* <h4>{quantity}</h4> */}
+                    <h4>{}</h4>
 
                     <button
                       className={`${styles.quantityControlButton}`}

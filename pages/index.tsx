@@ -217,24 +217,31 @@ const Home: NextPage = () => {
           <p>Loading...</p>
         ) : (
           <>
+
+      
             <div className={styles.infoSide}>
-              {/* Title of your NFT Collection */}
-              <h1>{contractMetadata?.name}</h1>
-              {/* Description of your NFT Collection */}
+
+
+              {/* Title of your NFT Collection 
+              <h1>{contractMetadata?.name}</h1>*/}
+
+
+              {/* Description of your NFT Collection 
               <p className={styles.description}>
                 {contractMetadata?.description}
-              </p>
+              </p> */}
             </div>
 
             <div className={styles.imageSide}>
-              {/* Image Preview of NFTs */}
+              
+              {/* Image Preview of NFTs 
               <MediaRenderer
                 className={styles.image}
                 src={contractMetadata?.image}
                 alt={`${contractMetadata?.name} preview image`}
-              />
+              /> */}
 
-              {/* Amount claimed so far */}
+              {/* Amount claimed so far 
               <div className={styles.mintCompletionArea}>
                 <div className={styles.mintAreaLeft}>
                   <p>Total Minted</p>
@@ -250,7 +257,7 @@ const Home: NextPage = () => {
                     <p>Loading...</p>
                   )}
                 </div>
-              </div>
+              </div> */}
 
               {claimConditions.data?.length === 0 ||
               claimConditions.data?.every(
@@ -269,7 +276,7 @@ const Home: NextPage = () => {
                 </div>
               ) : (
                 <>
-                  <p>Quantity</p>
+                  {/* <p>Quantity</p> */}
                   <div className={styles.quantityContainer}>
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -319,17 +326,7 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      {/* Powered by thirdweb */}{" "}
-      <Image
-        src="/logo.png"
-        alt="thirdweb Logo"
-        width={135}
-        height={22}
-        className={styles.buttonGapTop}
-        style={{
-          objectFit: "contain",
-        }}
-      />
+      
     </div>
   );
 };

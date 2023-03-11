@@ -20,7 +20,7 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xCD88F23c21E31115d8A23EC1b9CF3B71bC3De18b";
+const myNftDropContractAddress = "0xbC044bc063F4F88e9d52D833c200aE05Ea65FAF9";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -217,31 +217,30 @@ const Home: NextPage = () => {
           <p>Loading...</p>
         ) : (
           <>
-           {/* 
+          
             <div className={styles.infoSide}>
-              
-              {/*
-               Title of your NFT Collection 
-              <h1>{contractMetadata?.name}</h1>*/}
-              
-              
-              {/* Description of your NFT Collection 
+
+
+              {/* Title of your NFT Collection 
+              <h1>{contractMetadata?.name}</h1> */}
+
+
+              {/* Description of your NFT Collection
               <p className={styles.description}>
                 {contractMetadata?.description}
-              </p>
-            
-            </div>*/}
+              </p> */}
+              
+            </div>
 
             <div className={styles.imageSide}>
-             
-              {/* Image Preview of NFTs 
+              {/* Image Preview of NFTs */}
               <MediaRenderer
                 className={styles.image}
                 src={contractMetadata?.image}
                 alt={`${contractMetadata?.name} preview image`}
-              /> */}
+              />
 
-              {/* Amount claimed so far 
+              {/* Amount claimed so far */}
               <div className={styles.mintCompletionArea}>
                 <div className={styles.mintAreaLeft}>
                   <p>Total Minted</p>
@@ -257,7 +256,7 @@ const Home: NextPage = () => {
                     <p>Loading...</p>
                   )}
                 </div>
-              </div> */} 
+              </div>
 
               {claimConditions.data?.length === 0 ||
               claimConditions.data?.every(
@@ -276,7 +275,7 @@ const Home: NextPage = () => {
                 </div>
               ) : (
                 <>
-                  {/*<p>Quantity</p>*/}
+                  <p>Quantity</p>
                   <div className={styles.quantityContainer}>
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -286,7 +285,7 @@ const Home: NextPage = () => {
                       -
                     </button>
 
-                    <h4>{Quantity}</h4>
+                    <h4>{quantity}</h4>
 
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -326,7 +325,7 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-
+     
     </div>
   );
 };

@@ -218,7 +218,7 @@ const Home: NextPage = () => {
         ) : (
           <>
 
-      
+            {/*
             <div className={styles.infoSide}>
 
 
@@ -229,8 +229,8 @@ const Home: NextPage = () => {
               {/* Description of your NFT Collection 
               <p className={styles.description}>
                 {contractMetadata?.description}
-              </p> */}
-            </div>
+              </p> 
+            </div>          */}
 
             <div className={styles.imageSide}>
               
@@ -326,7 +326,7 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      
+
     </div>
   );
 };

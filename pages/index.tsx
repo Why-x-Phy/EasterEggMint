@@ -241,7 +241,7 @@ const Home: NextPage = () => {
                 alt={`${contractMetadata?.name} preview image`}
               /> */}
 
-              {/* Amount claimed so far */} 
+              {/* Amount claimed so far 
               <div className={styles.mintCompletionArea}>
                 <div className={styles.mintAreaLeft}>
                   <p>Total Minted</p>
@@ -257,7 +257,7 @@ const Home: NextPage = () => {
                     <p>Loading...</p>
                   )}
                 </div>
-              </div>
+              </div> */} 
 
               {claimConditions.data?.length === 0 ||
               claimConditions.data?.every(
@@ -276,7 +276,7 @@ const Home: NextPage = () => {
                 </div>
               ) : (
                 <>
-                  <p>Quantity</p>
+                  {/*<p>Quantity</p>*/}
                   <div className={styles.quantityContainer}>
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
                       -
                     </button>
 
-                    <h4>{}</h4>
+                    <h4>{Quantity}</h4>
 
                     <button
                       className={`${styles.quantityControlButton}`}

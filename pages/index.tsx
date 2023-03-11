@@ -217,19 +217,13 @@ const Home: NextPage = () => {
           <p>Loading...</p>
         ) : (
           <>
-          
             <div className={styles.infoSide}>
-
-
-              {/* Title of your NFT Collection 
-              <h1>{contractMetadata?.name}</h1> */}
-
-
-              {/* Description of your NFT Collection
+              {/* Title of your NFT Collection */}
+              <h1>{contractMetadata?.name}</h1>
+              {/* Description of your NFT Collection */}
               <p className={styles.description}>
                 {contractMetadata?.description}
-              </p> */}
-              
+              </p>
             </div>
 
             <div className={styles.imageSide}>
@@ -325,7 +319,17 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-     
+      {/* Powered by thirdweb */}{" "}
+      <Image
+        src="/logo.png"
+        alt="thirdweb Logo"
+        width={135}
+        height={22}
+        className={styles.buttonGapTop}
+        style={{
+          objectFit: "contain",
+        }}
+      />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from "@Why-x-Phy/react";
 import "../styles/globals.css";
 import Head from "next/head";
 

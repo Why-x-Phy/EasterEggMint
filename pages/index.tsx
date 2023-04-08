@@ -313,7 +313,7 @@ const Home: NextPage = () => {
                         }}
                         onSuccess={() => {
                           setQuantity(1);
-                          alert("Successfully claimed NFTs");
+                          alert("Successfully claimed NFT");
                         }}
                       >
                         {buttonLoading ? "Loading..." : buttonText}

@@ -20,7 +20,7 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xCD88F23c21E31115d8A23EC1b9CF3B71bC3De18b";
+const myNftDropContractAddress = "0x579F5Ac21564D3f520fB7b4087B26063EA685381";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -276,7 +276,7 @@ const Home: NextPage = () => {
                 </div>
               ) : (
                 <>
-                  {/* <p>Quantity</p> */}
+                  {/* <p>Quantity</p> 
                   <div className={styles.quantityContainer}>
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -295,7 +295,7 @@ const Home: NextPage = () => {
                     >
                       +
                     </button>
-                  </div>
+                  </div> */}
 
                   <div className={styles.mintContainer}>
                     {isSoldOut ? (
